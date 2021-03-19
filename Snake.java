@@ -1,0 +1,3 @@
+public Snake implements Animal {
+
+}
