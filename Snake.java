@@ -1,8 +1,8 @@
 public class Snake implements Animal {
-    private int satiation;
-    
     public Snake() {
         Main.numAnimals += 1;
+        this.satiation = 0;
+
     }
 
     public int getSatiation() {
@@ -16,7 +16,7 @@ public class Snake implements Animal {
     @Override
     public void hunt() {
         System.out.println("I'm a snake so I swallow my prey whole. When I hunt my satiation increases by 3 points.");
-        satiation += 3;
-        System.out.println("This snake's new satiation level: " + satiation);
+        this.satiation += 3;
+        System.out.println("This snake's new satiation level: " + this.satiation);
     }
 }
